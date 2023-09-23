@@ -2,6 +2,7 @@ import { DebugService } from './../debug.service';
 import { Component, OnInit } from '@angular/core';
 import { ExpenseEntry } from '../expense-entry/expense-entry';
 import { ExpenseEntryService } from '../expense-entry.service';
+import { switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-expense-entry-list',
@@ -74,4 +75,5 @@ export class ExpenseEntryListComponent implements OnInit {
     this.restService.getExpenseEntries()
       .subscribe(data => this.expenseEntries = data);
   }
+
 }

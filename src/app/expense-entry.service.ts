@@ -11,7 +11,7 @@ import { HttpClient, HttpHeaders, HttpErrorResponse } from
 })
 export class ExpenseEntryService {
 
-  private expenseRestUrl = 'http://localhost:8000/api/expense';;
+  private expenseRestUrl = 'http://localhost:8000/api/expense';
   private httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };

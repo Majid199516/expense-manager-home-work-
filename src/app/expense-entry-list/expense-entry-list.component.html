@@ -30,6 +30,9 @@
               <td>{{ entry.category }}</td>
               <td>{{ entry.location }}</td>
               <td>{{ entry.spendOn | date : "short" }}</td>
+              <td>
+                <a routerLink="../expenses/detail/{{ entry.id }}">View</a>
+              </td>
             </tr>
           </tbody>
         </table>
